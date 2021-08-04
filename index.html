@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!--create creative title-->
+    <title>Disc Golf</title>
+
+<!--font awesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<!--google font primary-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<!--google font secondary-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<!--link to css-->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-    <h1>Howdy Y'all</h1>
-    
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>        
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#rulesandregulations" class="nav__link">Rules & Regulations</a></li>
+                    <li class="nav__item"><a href="#map" class="nav__link">Map</a></li>
+                </ul>      
+            </nav>
+    </header>
+<!--INTRO-->
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">Disc Golf</h1>
+    <p class="section__subtitle section__subtitle--intro">insert quirky disc golf subtitle</p>
+<!--insert disc golf image, kinda hard to find-->
+    <img src="./assets/pexels-photo-4734716.jpeg" alt="discs" class="intro__img">
+</section>
+
+<!--RULES & REGULATIONS-->
+<section class="rar" id="rules">
+    <h2 class="section__title section__title--rules">Basic Rules and Regulations of Disc Golf</h2>
+    <p class="section__subtitle section__subtitle--rules">Disc Golf has a very through set of formal rules as laid out by the Professional Disc Golf Association</p>
+</section>
+   
+
+
+<script src="./assets/script.js"></script>
+
 </body>
 </html>
