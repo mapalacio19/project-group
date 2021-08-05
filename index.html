@@ -1,34 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disc Golf Course Tracker</title>
-    <link rel="stylesheet" href="./assets/style.css"/>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<!--create creative title-->
+    <title>Disc Golf</title>
+
+<!--font awesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<!--google font primary-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<!--google font secondary-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<!--link to css-->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
     <header>
-        <h1>
-            Disc Golf Course Tracker
-        </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="Players-in-the-project">Players In The Project</a>
-                    </li>
-                    <li>
-                        <a href="rules-&-regulations">Rules & Regulations</a>
-                    </li>
-                    <li>
-                        <a href="map">Map</a>
-                    </li>
-                    <li>
-                        <a href="weather-for-today">Weather For Today</a>
-                    </li>
-                </ul>
+        
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>        
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#rulesandregulations" class="nav__link">Rules & Regulations</a></li>
+                    <li class="nav__item"><a href="#map" class="nav__link">Map</a></li>
+                </ul>      
             </nav>
-        </header>
+    </header>
+<!--INTRO-->
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">Disc Golf</h1>
+    <p class="section__subtitle section__subtitle--intro">Players in the Project</p>
+
+<!--Developers Working On Project--> 
+            <div id="app" class="row-column is-multiline is-mobile">
+                <div class="column is-4">
+                    <div class="card-large">
+                        <div class="card-image">
+                        <figure class="image is -16by9">
+                            <img src="./assets/IMG_8913.jpeg" alt="image">  
+                            Developer
+                            <br>
+                            Mandy Palacio
+                            </figure>
+                        </div>
+                    </div>
+                </div>      
+
+            <div class="column is-4">
+                <div class="card-large">
+                    <div class="card-image">
+                    <figure class="image is -16by9">
+                        <img src="./assets/IMG_8913.jpeg" alt="image">  
+                        Developer
+                        <br>
+                        Aaron Whitney
+                    </figure>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="column is-4">
+                <div class="card-large">
+                    <div class="card-image">
+                    <figure class="image is -16by9">
+                        <img src="./assets/IMG_8913.jpeg" alt="image">  
+                        Developer
+                        <br>
+                        Cristian Farias
+                    </figure>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+<!--RULES & REGULATIONS-->
+<section class="rar" id="rules">
+    <h2 class="section__title section__title--rules">Basic Rules and Regulations of Disc Golf</h2>
+    <p class="section__subtitle section__subtitle--rules">Disc Golf has a very through set of formal rules as laid out by the Professional Disc Golf Association</p>
+</section>
+
+<!--Weather For Today-->
+<link
+rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
+/>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">Weather.JS</a>
+        </div>
+    </nav>
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Get The Weather For a Location</h1>
+            <p class="lead">Enter Your Location</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="City">
+        </div>
+        <br>
+        <div id="profile"></div>
+    </div>
+    <div class="container text-center mt-2">
+        <button class="btn btn-primary" id="submit">Submit</button>
+    </div>
     
+    <div id="content">
+
+    </div>
+    <footer class="mt-5 p-3 text-center bg-light">
+         Weather.js &copy;
+    </footer>
+</body>
+<script src="fetch.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+</html>
+   
+
+
+<script src="./assets/script.js"></script>
+
 </body>
 </html>
