@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--create creative title-->
+<title>Disc Golf</title>
+<!--bulma link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<!--font awesome cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<!--google font primary-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<!--google font secondary-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<!--link to css-->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>        
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#rar" class="nav__link">Rules & Regulations</a></li>
+                    <li class="nav__item"><a href="#map" class="nav__link">Map</a></li>
+                    <li class="nav__item"><a href="#weather" class="nav__link">Weather</a></li>
+                </ul>      
+            </nav>
+    </header>
+<!--INTRO-->
+<body>
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">Disc Golf</h1>
+    <p class="section__subtitle section__subtitle--intro">Players In The Project</p>
+
+    <div class="container has-text-centered">
+        <div class="columns is-mobile is-centered">
+            <div class="column">
+                <figure class="image is-3x4">
+                    <img class="is-rounded" src="./assets/IMG_8913.jpeg">
+                </figure>
+                <p>Mandy Ann Palacio</p>
+            </div>
+
+        <div class="column is-mobile">
+            <figure class="image is-3x4">
+                <img class="is-rounded" src="./assets/IMG_8913.jpeg">
+                <p>Aaron Whitney</p>
+            </figure>
+            </div>
+    
+        <div class="column is-mobile">
+            <figure class="image is-3x4">
+                <img class="is-rounded" src="./assets/IMG_8913.jpeg">
+                <p>Cristian Farias</p>
+            </figure>
+        </div>
+    </div>
+</section>
+            
+<p>Disc Golf Stats</p>
+          
+        </div>
+      </div>
+
+<!--RULES & REGULATIONS-->
+<section class="rules" id="rar">
+    <h2 class="section__title section__title--rules">Basic Rules and Regulations of Disc Golf</h2>
+    <p class="section__subtitle section__subtitle--rules"></p>
+</section>
+<section>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 200px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>    
+        <div class="row">
+          <div class="column" style="background-color:rgb(255, 255, 255);" style="color: rgb(255, 255, 255);">
+            <p>* REMAIN QUIET AND AVOID UNNECESSARY MOVEMENTS WHILE OTHERS ARE THROWING.</p>
+            <p>* STAND BEHIND THE PLAYER WHO IS THROWING UNTIL THROW IS COMPLETE.</p>
+            <p>* REMOVE DISC FROM DISC BASKET AFTER COMPLETING THE HOLE.</p>
+            <p>* HELP NEW PLAYERS LEARN THE RULES.</p>
+
+          </div>
+          <div class="column" style="background-color:rgb(255, 255, 255);">
+            <p>* ALLOW FASTER GROUPS TO PLAY THROUGH WHEN POSSIBLE.</p>
+            <p>* PICK UP TRASH AND PUT IN PROPER RECEPTACLES.</p>
+            <p>* DO NOT ALTER THE COURSE (TREES, BUSHES, ETC.) IN ANY WAY.</p>
+
+          </div>
+        </div>
+</section>
+
+
+<!--Weather For Today--> 
+<section class="rules" id="weather">
+    <h2 class="section__title section__title--rules">Weather For Today</h2>
+    <p class="section__subtitle section__subtitle--rules"></p>
+</section>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"/> 
+
+    </nav> 
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <div style="text-align:center">
+            <h1>Get The Weather For Your Location</h1>
+            <p class="lead">Enter Your Location</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="Zip-Code">
+        </div>
+        <br>
+        <div id="profile"></div>
+    </div>
+    <div class="container text-center mt-2">
+        <button class="btn btn-primary" id="submit">Submit</button>
+    </div>
+    
+    <div id="content">
+
+</body>
+<script src="./assets/fetch.js"></script>
+<script src="./assets/ui.js"></script>
+<script src="./assets/app.js"></script>
+<script src="./assets/script.js"></script>
+
+</body>
+</html>
