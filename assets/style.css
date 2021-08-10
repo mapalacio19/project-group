@@ -56,6 +56,11 @@ img {
     max-width: 100%;
 }
 
+img header {
+    padding-right: 100px;
+
+}
+
 h1,
 h2,
 h3 {
@@ -109,7 +114,6 @@ h3 { font-size: var(--fs-h3); }
     left: 0;
     right: 0;
     z-index: 100;
-
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5,0,.5,1);
 }
@@ -201,6 +205,72 @@ h3 { font-size: var(--fs-h3); }
     grid-row: 2;
     text-align: right;
     left: -1.5em;
+}
+
+/* Hero Style Start */
+.section-class-hero {
+    background-image: url("C:\Users\Gary And The Parents\Desktop\New folder\RennyGold.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+section.hero {
+    padding: 0;  
+}
+  /* Hero Style End */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+        
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: center; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+        
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #38dcb4;
+    width: 80%;
+    position: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+        
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
 }
 
 /*map*/
