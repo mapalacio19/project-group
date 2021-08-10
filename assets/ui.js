@@ -21,8 +21,6 @@ class UI {
                   
               </div>
           </div>
-          
-          
           `;
     }
   
