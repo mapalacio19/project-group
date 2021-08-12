@@ -38,6 +38,7 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#video" class="nav__link">Disc Golf 101</a></li>
                     <li class="nav__item"><a href="#rar" class="nav__link">Rules & Regulations</a></li>
                     <li class="nav__item"><a href="#google" class="nav__link">Map</a></li>
                     <li class="nav__item"><a href="#weather" class="nav__link">Weather</a></li>
@@ -53,7 +54,7 @@
 
     <section class="hero">
       <div class="hero-content">
-      <img src="C:\Users\Gary And The Parents\Desktop\New folder\RennyGold.jpg" alt="Disc Golf Course">
+      <img src="./Images/RennyGold.jpg" alt="Disc Golf Course">
     </section>  
 
     <p class="section__subtitle section__subtitle--intro">Players In The Project</p>
@@ -62,21 +63,21 @@
         <div class="columns is-mobile is-centered">
             <div class="column">
                 <figure class="image is-3x4">
-                    <img class="is-rounded" src="C:\Users\Gary And The Parents\Pictures\IMG-0793.JPG">
+                    <img class="is-rounded" src="./Images/IMG-0793.JPG">
                 </figure>
                 <p>Mandy Palacio</p>
             </div>
 
         <div class="column is-mobile">
             <figure class="image is-3x4">
-                <img class="is-rounded" src="C:\Users\Gary And The Parents\Pictures\Mandy and Aaron family photos 2020\IMG_4869.jpg">
+                <img class="is-rounded" src="./Images/IMG_4869.jpg">
             </figure>
             <p>Aaron Whitney</p>
             </div>
     
         <div class="column is-mobile">
             <figure class="image is-3x4">
-                <img class="is-rounded" src="C:\Users\Gary And The Parents\Desktop\projects\project-group\assets\unnamed.jpg">
+                <img class="is-rounded" src="./Images/unnamed.jpg">
             </figure>
             <p>Cristian Farias</p>
         </div>
@@ -85,16 +86,13 @@
 
             
 
-        
-
-         
-<section class="learn" id="learn">
-
-        <h2>Intro to Disc Golf</h2>
+<section class="intro" id="video">
+    <h1 class="section__title section__title--intro">DISC GOLF 101</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
         
         <!-- Trigger/Open The Modal -->
         <div class="row justify-content-center">
-        <button id="myBtn">Watch me!</button>
+        <button id="myBtn">CLICK ME - DISCO GOLF 101</button>
         </div>
         
         <!-- The Modal -->
@@ -106,35 +104,6 @@
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/U1FSkJpImps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
           </div>
         </div>
-
-        
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-        
-// Get the button that opens the modal s
-var btn = document.getElementById("myBtn");
-        
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-        
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-        
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-        
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-  modal.style.display = "none";
-  }
-}
-  </script>
 </section>
 
 
@@ -160,7 +129,7 @@ window.onclick = function(event) {
             <p>* DO NOT ALTER THE COURSE (TREES, BUSHES, ETC.) IN ANY WAY.</p>
           </div>
         </article>
-        <img src="C:\Users\Gary And The Parents\Desktop\New folder\images.png" alt="Emoticon throwing a disc into a disc golf basket" class="center">
+        <img src="./Images/images.png" alt="Emoticon throwing a disc into a disc golf basket" class="center">
 </section>
 
 <!--Map-->
@@ -178,12 +147,12 @@ window.onclick = function(event) {
 <section class="intro" id="weather">
     <h1 class="section__title section__title--intro">Weather For Today</h1>
     <p class="section__subtitle section__subtitle--intro"></p>
-</section>
+
 
     <div class="container searchContainer">
         <div class="search card card-body">
           <div class="container">
-            <img src="C:\Users\Gary And The Parents\Desktop\New folder\weather.jpeg" alt="Different weather" style="width:50%" class="center">
+            <img src="./Images/weather.png" alt="Different weather" style="width:50%" class="center">
             <div style="text-align: center">
             <h2>Get The Weather For Your Location</h2>
             <p class="lead">Enter Your Location</p>
@@ -195,19 +164,27 @@ window.onclick = function(event) {
     <div class="container text-center mt-2">
         <button class="btn btn-primary" id="submit">Submit</button>
     </div>
-    
+   
     <div id="content"></div>
+</section> 
 
-    <div class="container">
-        <h1>Todo</h1>
+
+
+
+
+
+<section class="intro" id="courses">
+    <h1 class="section__title section__title--intro"></h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+</section>    
+
+    <div class="container"></div>
+        <h1>Disc Golf Courses Visted</h1>
     
         <form class="todo-form">
-          <input type="text" class="todo-input" placeholder="Add a Todo...">
+          <input type="text" class="todo-input" placeholder="Name of Disc Golf Course">
           <button type="submit" class="add-button">Add</button>
         </form>
-    
-
-
 
 
 </body>
