@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--create creative title-->
 <title>Disc Golf</title>
-<!--bulma link-->
+<!--bulma-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"/> 
 <!--font awesome cdn-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <!--google font primary-->
@@ -19,12 +21,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 <!--link to css-->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+<!--map api-->
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
 </head>
 
 <body>
     <header>
-        
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>        
@@ -32,67 +39,94 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#rar" class="nav__link">Rules & Regulations</a></li>
-                    <li class="nav__item"><a href="#map" class="nav__link">Map</a></li>
+                    <li class="nav__item"><a href="#google" class="nav__link">Map</a></li>
                     <li class="nav__item"><a href="#weather" class="nav__link">Weather</a></li>
+                    <li class="nav__item"><a href="#top" class="nav__link">Your Disc Golf Courses List</a></li>
                 </ul>      
             </nav>
     </header>
+
 <!--INTRO-->
 <body>
 <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">Disc Golf</h1>
-    <p class="section__subtitle section__subtitle--intro">Players In The Project</p>
+    <h1 class="section__title section__title--intro"><strong>Disc Golf Locator</strong>
+    </h1>
 
-    <div class="container has-text-centered">
-        <div class="columns is-mobile is-centered">
-            <div class="column">
-                <figure class="image is-3x4">
-                    <img class="is-rounded" src="./assets/IMG_8913.jpeg">
-                </figure>
-                <p>Mandy Ann Palacio</p>
-            </div>
+    <section class="hero">
+      <div class="hero-content">
+      <img src="./Images/RennyGold.jpg" alt="Disc Golf Course">
 
-        <div class="column is-mobile">
-            <figure class="image is-3x4">
-                <img class="is-rounded" src="./assets/IMG_8913.jpeg">
-                <p>Aaron Whitney</p>
-            </figure>
-            </div>
-    
-        <div class="column is-mobile">
-            <figure class="image is-3x4">
-                <img class="is-rounded" src="./assets/IMG_8913.jpeg">
-                <p>Cristian Farias</p>
-            </figure>
+      <!-- Trigger/Open The Modal -->
+        <div class="container text-center mt-2">
+            <button class="button is-outlined is-success" id="myBtn">WATCH ME - DISC GOLF 101</button>
         </div>
-    </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/U1FSkJpImps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          </div>
+        </div>
+    </section>  
+
+    <p class="section__subtitle section__subtitle--intro"></p>
 </section>
-            
-<p>Disc Golf Stats</p>
-          
-        </div>
-      </div>
 
 <!--RULES & REGULATIONS-->
 <section class="rules" id="rar">
-    <h2 class="section__title section__title--rules">Basic Rules and Regulations of Disc Golf</h2>
-    <p class="section__subtitle section__subtitle--rules"></p>
+    <h1 class="section__title section__title--intro">Basic Disc Golf Rules and Regulations</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+
+    <style>
+        
+        </style>    
+        <article class="row">
+          <div class="column" style="background-color:rgb(255, 255, 255);" style="color: rgb(255, 255, 255);">
+            <p>* REMAIN QUIET AND AVOID UNNECESSARY MOVEMENTS WHILE OTHERS ARE THROWING.</p>
+            <p>* STAND BEHIND THE PLAYER WHO IS THROWING UNTIL THROW IS COMPLETE.</p>
+            <p>* REMOVE DISC FROM DISC BASKET AFTER COMPLETING THE HOLE.</p>
+            <p>* HELP NEW PLAYERS LEARN THE RULES.</p>
+
+          </div>
+          <div class="column" style="background-color:rgb(255, 255, 255);">
+            <p>* ALLOW FASTER GROUPS TO PLAY THROUGH WHEN POSSIBLE.</p>
+            <p>* PICK UP TRASH AND PUT IN PROPER RECEPTACLES.</p>
+            <p>* DO NOT ALTER THE COURSE (TREES, BUSHES, ETC.) IN ANY WAY.</p>
+          </div>
+        </article>
+        <img src="./Images/images.png" alt="Emoticon throwing a disc into a disc golf basket" class="center">
 </section>
+
+<!--Map-->
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+<section class="intro" id="google">
+    
+    <h1 class="section__title section__title--intro">Map</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+ 
+        <div class="container"></div>
+
+        <div id="googlemap">
+    </div>
+    </section>
 
 
 <!--Weather For Today--> 
-<section class="rules" id="weather">
-    <h2 class="section__title section__title--rules">Weather For Today</h2>
-    <p class="section__subtitle section__subtitle--rules"></p>
-</section>
+<section class="intro" id="weather">
+    <h1 class="section__title section__title--intro">Weather For Today</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"/> 
 
-    </nav> 
     <div class="container searchContainer">
         <div class="search card card-body">
-            <div style="text-align:center">
-            <h1>Get The Weather For Your Location</h1>
+          <div class="container">
+            <img src="./Images/weather.png" alt="Different weather" style="width:25%" class="center">
+            <div style="text-align: center">
+            <h2>Get The Weather For Your Location</h2>
             <p class="lead">Enter Your Location</p>
             <input type="text" id="searchUser" class="form-control" placeholder="Zip-Code">
         </div>
@@ -100,16 +134,41 @@
         <div id="profile"></div>
     </div>
     <div class="container text-center mt-2">
-        <button class="btn btn-primary" id="submit">Submit</button>
+        <button class="button is-outlined is-success" id="submit">Submit</button>
     </div>
-    
-    <div id="content">
+   
+    <div id="content"></div>
+</section> 
 
-</body>
+<!--golf list-->
+<section class="intro" id="top">
+    <h1 class="section__title section__title--intro">Your Disc Golf Courses</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+<div class="list has-text-centered">
+    <ul id="listOfItemsID" class="items">
+    </ul>
+    <form id="formToAddItemsID" class="addItems has-text-centered">
+        <input type="text" name="item" placeholder="Disc Golf Courses Destinations" required>
+        <input type="submit" value="Add Course" >
+    </form>
+</div>
+  
+<!--footer-->
+<footer class="footer has-background-info-light">
+    <div class="content has-text-centered has-background-info-light">
+      <p>
+        <strong>Disc Golf Locator</strong> by <a href=gitrepo>Mandy Palacios, Aaron Whitney, and Cristian Farias</a>.
+      </p>
+    </div>
+  </footer>
+
+
+
 <script src="./assets/fetch.js"></script>
 <script src="./assets/ui.js"></script>
 <script src="./assets/app.js"></script>
 <script src="./assets/script.js"></script>
+<script src="./assets/list.js"></script>
 
 </body>
 </html>
