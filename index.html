@@ -42,6 +42,7 @@
                     <li class="nav__item"><a href="#rar" class="nav__link">Rules & Regulations</a></li>
                     <li class="nav__item"><a href="#google" class="nav__link">Map</a></li>
                     <li class="nav__item"><a href="#weather" class="nav__link">Weather</a></li>
+                    <li class="nav__item"><a href="#top" class="nav__link">Your Disc Golf Courses List</a></li>
                 </ul>      
             </nav>
     </header>
@@ -49,12 +50,18 @@
 <!--INTRO-->
 <body>
 <section class="intro" id="home">
+    <h1 class="section__title section__title--intro"><strong>Disc Golf Locator</strong>
     <h1 class="section__title section__title--intro"><strong>Disc Golf</strong>
     </h1>
 
     <section class="hero">
       <div class="hero-content">
       <img src="./Images/RennyGold.jpg" alt="Disc Golf Course">
+
+      <!-- Trigger/Open The Modal -->
+        <div class="container text-center mt-2">
+            <button class="button is-outlined is-success" id="myBtn">WATCH ME - DISC GOLF 101</button>
+        </div>
     </section>  
 
     <p class="section__subtitle section__subtitle--intro">Players In The Project</p>
@@ -104,6 +111,14 @@
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/U1FSkJpImps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
           </div>
         </div>
+    </section>  
+
+    <p class="section__subtitle section__subtitle--intro"></p>
+</section>
+
+<!--RULES & REGULATIONS-->
+<section class="rules" id="rar">
+    <h1 class="section__title section__title--intro">Basic Disc Golf Rules and Regulations</h1>
 </section>
 
 
@@ -136,10 +151,20 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
 <section class="intro" id="google">
-    <h1 class="section__title section__title--intro">Map</Map></h1>
+
+    
+    <h1 class="section__title section__title--intro">Map</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+ 
+        <div class="container"></div>
+
+        <div id="googlemap">
+    </div>
+<h1 class="section__title section__title--intro">Map</Map></h1>
     <p class="section__subtitle section__subtitle--intro"></p> 
     
     <div id="googlemap"></div>
+
     </section>
 
 
@@ -152,6 +177,8 @@
     <div class="container searchContainer">
         <div class="search card card-body">
           <div class="container">
+
+            <img src="./Images/weather.png" alt="Different weather" style="width:25%" class="center">
             <img src="./Images/weather.png" alt="Different weather" style="width:50%" class="center">
             <div style="text-align: center">
             <h2>Get The Weather For Your Location</h2>
@@ -162,16 +189,33 @@
         <div id="profile"></div>
     </div>
     <div class="container text-center mt-2">
-        <button class="btn btn-primary" id="submit">Submit</button>
+        <button class="button is-outlined is-success" id="submit">Submit</button>
     </div>
    
     <div id="content"></div>
 </section> 
 
-
-
-
-
+<!--golf list-->
+<section class="intro" id="top">
+    <h1 class="section__title section__title--intro">Your Disc Golf Courses</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+<div class="list has-text-centered">
+    <ul id="listOfItemsID" class="items">
+    </ul>
+    <form id="formToAddItemsID" class="addItems has-text-centered">
+        <input type="text" name="item" placeholder="Disc Golf Courses Destinations" required>
+        <input type="submit" value="Add Course" >
+    </form>
+</div>
+  
+<!--footer-->
+<footer class="footer has-background-info-light">
+    <div class="content has-text-centered has-background-info-light">
+      <p>
+        <strong>Disc Golf Locator</strong> by <a href=gitrepo>Mandy Palacios, Aaron Whitney, and Cristian Farias</a>.
+      </p>
+    </div>
+  </footer>
 
 <section class="intro" id="courses">
     <h1 class="section__title section__title--intro"></h1>
@@ -187,11 +231,11 @@
         </form>
 
 
-</body>
 <script src="./assets/fetch.js"></script>
 <script src="./assets/ui.js"></script>
 <script src="./assets/app.js"></script>
 <script src="./assets/script.js"></script>
+<script src="./assets/list.js"></script>
 
 </body>
 </html>

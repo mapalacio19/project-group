@@ -13,7 +13,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: rgba(228, 121, 27, 0.714);
+    --clr-accent: rgba(95, 62, 244, 0.714);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,11 +43,10 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1;
-    padding-bottom: 50px;
-
 }
 
 section {
+    padding: 1em .5em;
     padding: 3em 1em;
 }
 
@@ -84,7 +83,7 @@ h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: .1em;
 }
 
 .section__title--intro {
@@ -99,12 +98,17 @@ h3 { font-size: var(--fs-h3); }
 .section__subtitle--intro,
 .section__subtitle--rules {
     background: var(--clr-accent);
-    padding: .25em 1em;
+    padding: .25em .50em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
 
 /*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}   
 .nav {
     position: fixed;
     background: var(--clr-dark);
@@ -198,6 +202,7 @@ h3 { font-size: var(--fs-h3); }
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px }
 
+
 /*intro*/
 .section__subtitle--intro {
     align-self: start;
@@ -279,6 +284,9 @@ cursor: pointer;
     width: 100vh;
     margin-left: auto;
     margin-right: auto;
+    padding: .25em .50em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
 /*modal*/
@@ -328,5 +336,80 @@ h2 {
 .close:focus {
     color: #000;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.list {
+    max-width: 500px;
+    background: var(--clr-light);
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.items {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.items li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.items label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.items input {
+    display: none;
+}
+
+.items input + label:before {
+    content: '⬜️';
+    margin-right: 5px;
+}
+
+.items input:checked + label:before {
+    content: '✅';
+}
+
+.addItems {
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.addItems input {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(7,39,39);
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--clr-l);
+    border:1px solid rgba(0,0,0,0.1);
+}
+
+input::placeholder {
+    color: rgb(7,39,39);
+}
+
+input[type='submit'] {
+        box-shadow: rgba(228, 121, 27, 0.714);
+
+}
+
+span {
     cursor: pointer;
 }
