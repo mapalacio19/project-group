@@ -77,6 +77,7 @@ var directions = new MapboxDirections({
   map.addControl(directions, 'top-right');
 }
 
+
 const formToAddItemsID = document.getElementById('formToAddItemsID');
 const listOfItemsID = document.getElementById('listOfItemsID');
 const parsingLocalStorageItems = JSON.parse(localStorage.getItem('items')) || [];
@@ -131,3 +132,4 @@ listOfItemsID.addEventListener('click', checkedOffFn);
 listOfItemsID.addEventListener('click', removeItemFn);
 
 populateList(parsingLocalStorageItems, listOfItemsID);
+

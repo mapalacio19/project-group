@@ -38,6 +38,7 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#video" class="nav__link">Disc Golf 101</a></li>
                     <li class="nav__item"><a href="#rar" class="nav__link">Rules & Regulations</a></li>
                     <li class="nav__item"><a href="#google" class="nav__link">Map</a></li>
                     <li class="nav__item"><a href="#weather" class="nav__link">Weather</a></li>
@@ -50,6 +51,7 @@
 <body>
 <section class="intro" id="home">
     <h1 class="section__title section__title--intro"><strong>Disc Golf Locator</strong>
+    <h1 class="section__title section__title--intro"><strong>Disc Golf</strong>
     </h1>
 
     <section class="hero">
@@ -59,6 +61,45 @@
       <!-- Trigger/Open The Modal -->
         <div class="container text-center mt-2">
             <button class="button is-outlined is-success" id="myBtn">WATCH ME - DISC GOLF 101</button>
+        </div>
+    </section>  
+
+    <p class="section__subtitle section__subtitle--intro">Players In The Project</p>
+
+    <div class="container has-text-centered">
+        <div class="columns is-mobile is-centered">
+            <div class="column">
+                <figure class="image is-3x4">
+                    <img class="is-rounded" src="./Images/IMG-0793.JPG">
+                </figure>
+                <p>Mandy Palacio</p>
+            </div>
+
+        <div class="column is-mobile">
+            <figure class="image is-3x4">
+                <img class="is-rounded" src="./Images/IMG_4869.jpg">
+            </figure>
+            <p>Aaron Whitney</p>
+            </div>
+    
+        <div class="column is-mobile">
+            <figure class="image is-3x4">
+                <img class="is-rounded" src="./Images/unnamed.jpg">
+            </figure>
+            <p>Cristian Farias</p>
+        </div>
+    </div>
+</section>
+
+            
+
+<section class="intro" id="video">
+    <h1 class="section__title section__title--intro">DISC GOLF 101</h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+        
+        <!-- Trigger/Open The Modal -->
+        <div class="row justify-content-center">
+        <button id="myBtn">CLICK ME - DISCO GOLF 101</button>
         </div>
         
         <!-- The Modal -->
@@ -78,6 +119,12 @@
 <!--RULES & REGULATIONS-->
 <section class="rules" id="rar">
     <h1 class="section__title section__title--intro">Basic Disc Golf Rules and Regulations</h1>
+</section>
+
+
+<!--RULES & REGULATIONS-->
+<section class="rules" id="rar">
+    <h1 class="section__title section__title--intro">Basic Rules and Regulations of Disc Golf</h1>
     <p class="section__subtitle section__subtitle--intro"></p>
 
     <style>
@@ -104,6 +151,7 @@
 <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
 <section class="intro" id="google">
+
     
     <h1 class="section__title section__title--intro">Map</h1>
     <p class="section__subtitle section__subtitle--intro"></p>
@@ -112,6 +160,11 @@
 
         <div id="googlemap">
     </div>
+<h1 class="section__title section__title--intro">Map</Map></h1>
+    <p class="section__subtitle section__subtitle--intro"></p> 
+    
+    <div id="googlemap"></div>
+
     </section>
 
 
@@ -124,7 +177,9 @@
     <div class="container searchContainer">
         <div class="search card card-body">
           <div class="container">
+
             <img src="./Images/weather.png" alt="Different weather" style="width:25%" class="center">
+            <img src="./Images/weather.png" alt="Different weather" style="width:50%" class="center">
             <div style="text-align: center">
             <h2>Get The Weather For Your Location</h2>
             <p class="lead">Enter Your Location</p>
@@ -162,6 +217,18 @@
     </div>
   </footer>
 
+<section class="intro" id="courses">
+    <h1 class="section__title section__title--intro"></h1>
+    <p class="section__subtitle section__subtitle--intro"></p>
+</section>    
+
+    <div class="container"></div>
+        <h1>Disc Golf Courses Visted</h1>
+    
+        <form class="todo-form">
+          <input type="text" class="todo-input" placeholder="Name of Disc Golf Course">
+          <button type="submit" class="add-button">Add</button>
+        </form>
 
 
 <script src="./assets/fetch.js"></script>
