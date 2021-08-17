@@ -22,3 +22,6 @@ Aaron Whitney
 Mandy Palacio
 
 # Link & ScreenShot
+* [Link & Screenshot](#link-&-screenshot) file:///Users/aaronwhitney/Documents/GitHub/project-group/index.html
+
+file:///Users/aaronwhitney/Desktop/jpeg%20photos/Screen%20Shot%202021-08-16%20at%208.40.33%20PM.png
